@@ -1,0 +1,106 @@
+/* Reset de estilos padrão para o body e header */
+body, header {
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8d056400; /* Cor de fundo do cabeçalho, você pode alterar */
+    padding: 10px 20px;
+}
+
+/* Estilos para as logos */
+.logos {
+    display: flex;
+    align-items: center;
+    top: auto;
+}
+
+.logo {
+    width: 240px; /* Largura da sua logo */
+    height: auto;
+    margin-right: 10px;
+    font-size: 100px; /* Tamanho da fonte do ícone do menu */
+}
+
+/* Estilos para a linha divisória */
+.linha {
+    width: 1px;
+    height: 50px;
+    background-color: rgb(105, 2, 146);
+    margin: 0 10px;
+}
+
+/* Estilos para o menu de idiomas */
+.idioma {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para a barra de pesquisa */
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border: 2px solid rgba(105, 2, 146, 0.671); /* Linha horizontal preta de 1 pixel */
+    border-radius: 5px;
+    margin-right: 20px; /* Espaço entre a barra de pesquisa de menu e outros elementos */
+}
+
+/* Estilos para o campo de pesquisa */
+.barra-pesquisa input[type="text"] {
+    flex-grow: 0;
+    border: none;
+    padding: 7px 10px;
+    outline: none;
+}
+
+/* Estilos para o ícone da lupa */
+.lupa {
+    font-size: 20px;
+    color: rgba(105, 2, 146, 0.671); /* Defina a cor da lupa conforme desejado */
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para o botão de login */
+.login-button {
+    padding: 8px 70px; /* Tamanho do botão de login */
+    background-color: rgb(105, 2, 146); /* Cor de fundo do botão de login, você pode alterar */
+    color: white; /* Cor do texto do botão de login */
+    border: none;
+    border-radius: 6px;
+    margin-right: 1px; /* Espaço entre o botão de menu e outros elementos */
+    font-size: 16px; /* Tamanho da fonte do botão de login */
+}
+
+/* Estilos para o botão de menu */
+.menu-button {
+    padding: 29px; /* Tamanho do botão de menu */
+    background-color: transparent; /* Cor de fundo transparente */
+    color: rgb(105, 2, 146); /* Cor do ícone do menu, você pode alterar */
+    border: none;
+    top: 25px;
+    margin-right: 2px; /* Espaço entre o botão de menu e outros elementos */
+    font-size: 37px; /* Tamanho da fonte do ícone do menu */
+}
+
+/* Estilo de fotos para o cabeçalho */
+.container {
+    align-items: center;
+}
+
+/* estilo 2 1349.4px */
+.photo-conteiner {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* estilo da imagem */
+.photo {
+    width: 1349.15px; /* largura da img */
+    height: 600px;
+}
