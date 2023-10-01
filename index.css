@@ -1,5 +1,6 @@
 /* Reset de estilos padrão para o body e header */
 body, header {
+    margin: 0;
     padding: 0;
 }
 
@@ -37,6 +38,7 @@ header {
 .idioma {
     display: flex;
     align-items: center;
+    left: 50px;
 }
 
 /* Estilos para a barra de pesquisa */
@@ -88,19 +90,58 @@ header {
     font-size: 37px; /* Tamanho da fonte do ícone do menu */
 }
 
-/* Estilo de fotos para o cabeçalho */
-.container {
-    align-items: center;
+/* Estilos para o carousel */
+#carouselExampleIndicators {
+    max-width: 800px; /* Largura máxima do carousel */
+    margin: 0 auto; /* Centralizar horizontalmente */
 }
 
-/* estilo 2 1349.4px */
-.photo-conteiner {
+/* Estilos para as imagens no carousel */
+.carousel-inner img {
     width: 100%;
-    overflow: hidden;
+    height: 400px; /* Altura das imagens do carousel */
+    object-fit: cover; /* Redimensionar e recortar as imagens para preencher o contêiner */
 }
 
-/* estilo da imagem */
-.photo {
-    width: 1349.15px; /* largura da img */
-    height: 600px;
+/* Estilos para os controles de navegação do carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto; /* Largura automática */
+}
+
+/* Estilos para os indicadores do carousel */
+.carousel-indicators {
+    justify-content: center; /* Centralizar os indicadores horizontalmente */
+    bottom: 10px; /* Distância do fundo */
+}
+
+/* Estilos para o texto alternativo nas imagens */
+.carousel-item img[alt]::after {
+    content: attr(alt); /* Exibir o texto alternativo como sobreposição */
+    position: absolute;
+    bottom: 10px; /* Distância do fundo */
+    left: 0;
+    right: 0;
+    text-align: center; /* Centralizar o texto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo do texto com transparência */
+    color: white; /* Cor do texto */
+    padding: 5px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilos para os controles de navegação do carousel (ícones) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    border-radius: 50%; /* Arredondar os ícones */
+    width: 30px; /* Largura dos ícones */
+    height: 30px; /* Altura dos ícones */
+    line-height: 30px; /* Alinhamento vertical no centro */
+    color: white; /* Cor dos ícones */
+    font-size: 18px; /* Tamanho dos ícones */
+}
+
+/* Estilos para os indicadores do carousel ativos */
+.carousel-indicators .active {
+    background-color: #007bff; /* Cor de fundo do indicador ativo */
 }
